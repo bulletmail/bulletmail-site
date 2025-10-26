@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BulletMail — Real Inboxing at Scale</title>
+    <meta name="description" content="Deliverability-first cold email infrastructure — powered by AWS SES. Multi-domain rotation, automatic warm-up, and clean sender reputation built in.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📩</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hero-bg{background:radial-gradient(1200px 500px at 50% 0%,rgba(255,255,255,.06),transparent 60%),linear-gradient(#0b0b0b,#0b0b0b)}
+    </style>
+  </head>
+  <body class="min-h-full bg-zinc-900 text-zinc-100 antialiased">
+    <header class="sticky top-0 z-40 backdrop-blur supports-backdrop-blur:bg-zinc-900/70 bg-zinc-900/60 border-b border-white/5">
+      <div class="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
+        <div class="font-semibold tracking-tight">BulletMail</div>
+        <nav class="hidden sm:flex items-center gap-8 text-sm text-zinc-300">
+          <a href="#why" class="hover:text-white">Why BulletMail</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+          <a href="#waitlist" class="rounded-md bg-white text-zinc-900 px-3 py-1.5 font-medium hover:opacity-90">Join Early Access</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-bg">
+      <div class="mx-auto max-w-6xl px-4 py-28 text-center">
+        <p class="mx-auto inline-block rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-widest text-zinc-300">A Smarter Way to Send</p>
+        <h1 class="mt-6 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05]">Real Inboxing at Scale</h1>
+        <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-300">
+          Deliverability-first cold email infrastructure — powered by AWS SES.
+          Multi-domain rotation, automatic warm-up, and clean sender reputation built in.
+        </p>
+        <div class="mt-10 flex items-center justify-center gap-4">
+          <a href="#waitlist" class="rounded-md bg-white text-zinc-900 px-5 py-3 font-medium hover:opacity-90">Join the Waitlist</a>
+          <a href="#domain" class="rounded-md border border-white/10 px-5 py-3 font-medium text-zinc-200 hover:bg-white/5">Learn More →</a>
+        </div>
+        <p class="mt-10 text-sm text-zinc-400">Trusted by growth teams who value inbox placement</p>
+      </div>
+    </section>
+
+    <section id="domain" class="mx-auto max-w-6xl px-4 py-20">
+      <h2 class="text-center text-4xl sm:text-5xl font-extrabold">Domain-Centric by Design</h2>
+      <p class="mt-4 text-center max-w-3xl mx-auto text-zinc-300">
+        Traditional cold email tools treat domains as an afterthought.
+        We built BulletMail around multi-domain infrastructure from day one, ensuring every send protects your sender reputation.
+      </p>
+      <div class="mt-12 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-white/10 bg-zinc-900/50 p-6">
+          <div class="text-2xl font-semibold">Multi-Domain Rotation</div>
+          <p class="mt-2 text-zinc-300">Distribute sends across multiple domains to maintain sender reputation and avoid ESP throttling. Each domain is warmed independently.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-zinc-900/50 p-6">
+          <div class="text-2xl font-semibold">AWS SES Foundation</div>
+          <p class="mt-2 text-zinc-300">Built on Amazon SES for enterprise-grade reliability, deliverability insights, and cost efficiency at scale.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-zinc-900/50 p-6">
+          <div class="text-2xl font-semibold">Automatic Warm-up</div>
+          <p class="mt-2 text-zinc-300">Progressive volume ramp-up for new domains. Our system gradually increases send volume to build trust with inbox providers.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-zinc-900/50 p-6">
+          <div class="text-2xl font-semibold">Clean Reputation</div>
+          <p class="mt-2 text-zinc-300">Live monitoring of bounces, complaints, and engagement. Automatic pausing when thresholds are breached.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="mx-auto max-w-6xl px-4 py-20 border-t border-white/5">
+      <h2 class="text-center text-4xl sm:text-5xl font-extrabold">Why BulletMail?</h2>
+      <div class="mt-12 grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="text-xl font-semibold">Built for Deliverability</h3>
+          <p class="mt-2 text-zinc-300">Most cold email tools focus on features. We focus on one thing: getting your emails into inboxes.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Transparent Infrastructure</h3>
+          <p class="mt-2 text-zinc-300">You own your AWS SES account. You see the real metrics. No black-box shared pools.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Scales with Your Growth</h3>
+          <p class="mt-2 text-zinc-300">Start with a few domains, scale to dozens while maintaining inbox rates.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Developer-Friendly API</h3>
+          <p class="mt-2 text-zinc-300">RESTful API and webhooks for complete integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-20 border-t border-white/5">
+      <h2 class="text-center text-3xl sm:text-4xl font-extrabold">In Short</h2>
+      <div class="mt-10 grid md:grid-cols-2 gap-4">
+        <div class="rounded-xl border border-white/10 p-4">✓ AWS SES-powered infrastructure</div>
+        <div class="rounded-xl border border-white/10 p-4">✓ Multi-domain rotation built-in</div>
+        <div class="rounded-xl border border-white/10 p-4">✓ Automatic warm-up sequences</div>
+        <div class="rounded-xl border border-white/10 p-4">✓ Real-time deliverability monitoring</div>
+        <div class="rounded-xl border border-white/10 p-4">✓ Clean sender reputation management</div>
+        <div class="rounded-xl border border-white/10 p-4">✓ Developer-friendly REST API</div>
+        <div class="rounded-xl border border-white/10 p-4">✓ Transparent metrics & reporting</div>
+        <div class="rounded-xl border border-white/10 p-4">✓ Enterprise-grade reliability</div>
+      </div>
+      <p class="mt-10 text-center text-zinc-300 max-w-3xl mx-auto">
+        BulletMail is cold email infrastructure that prioritizes deliverability. No gimmicks, no shared pools, no black boxes. Just reliable inbox placement at scale.
+      </p>
+    </section>
+
+    <section id="waitlist" class="mx-auto max-w-4xl px-4 py-24 border-t border-white/5">
+      <h2 class="text-center text-4xl font-extrabold">Join Early Access</h2>
+      <p class="mt-3 text-center text-zinc-300">Get notified when we launch. Early members receive priority onboarding and exclusive pricing.</p>
+      <form class="mt-10 rounded-2xl border border-white/10 bg-zinc-900/60 p-6 sm:p-10 max-w-2xl mx-auto"
+            action="https://tally.so/r/waitlist" method="get" target="_blank">
+        <label class="block text-sm text-zinc-300">Work Email</label>
+        <input type="email" required placeholder="you@company.com"
+               class="mt-1 w-full rounded-md bg-zinc-800 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20">
+        <label class="block mt-4 text-sm text-zinc-300">Company Name</label>
+        <input type="text" placeholder="Acme Inc"
+               class="mt-1 w-full rounded-md bg-zinc-800 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20">
+        <button class="mt-6 w-full rounded-md bg-white text-zinc-900 px-4 py-3 font-medium hover:opacity-90">Join Waitlist</button>
+        <p class="mt-3 text-center text-xs text-zinc-400">By joining, you agree to receive product updates. Unsubscribe anytime.</p>
+      </form>
+    </section>
+
+    <footer id="contact" class="border-t border-white/5">
+      <div class="mx-auto max-w-6xl px-4 py-10 grid sm:grid-cols-2 gap-4 text-sm text-zinc-400">
+        <div>
+          <div class="font-semibold text-zinc-200">BulletMail</div>
+          <div>Deliverability-first cold email infrastructure</div>
+        </div>
+        <div class="sm:text-right space-x-6">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#waitlist" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+      <div class="text-center text-xs text-zinc-500 pb-8">© 2025 BulletMail. All rights reserved.</div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click',e=>{
+          const id=a.getAttribute('href').slice(1);
+          const el=document.getElementById(id);
+          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+        });
+      });
+    </script>
+  </body>
+</html>
