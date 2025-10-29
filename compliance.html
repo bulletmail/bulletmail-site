@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Compliance — BulletMail — Real Inboxing at Scale</title>
+    <meta name="description"
+        content="Deliverability-first cold email infrastructure — powered by AWS SES. Multi-domain rotation, automatic warm-up, and clean sender reputation built in.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📩</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background: radial-gradient(1200px 500px at 50% 0%, rgba(255, 255, 255, .06), transparent 60%), linear-gradient(#0b0b0b, #0b0b0b)
+        }
+    </style>
+</head>
+
+<body class="min-h-full bg-zinc-900 text-zinc-100 antialiased">
+    <header
+        class="sticky top-0 z-40 backdrop-blur supports-backdrop-blur:bg-zinc-900/70 bg-zinc-900/60 border-b border-white/5">
+        <div class="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
+            <div class="font-semibold tracking-tight">BulletMail</div>
+            <nav class="hidden sm:flex items-center gap-8 text-sm text-zinc-300">
+                <a href="#why" class="hover:text-white">Why BulletMail</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+                <a href="#waitlist"
+                    class="rounded-md bg-white text-zinc-900 px-3 py-1.5 font-medium hover:opacity-90">Join
+                    Early Access</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-bg">
+        <div class="mx-auto max-w-6xl px-4 py-28 text-center">
+            <h1 class="mt-6 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05]">
+                Compliance and Best Practices
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-zinc-300">
+                BulletMail is committed to responsible email delivery and full compliance with AWS SES policies,
+                CAN-SPAM, and GDPR.
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-6xl px-4 py-20 border-t border-white/5">
+        <h3 class="text-3xl font-extrabold">
+            Our standards include:
+        </h3>
+        <ul class="grid grid-cols-2 gap-4 gap-x-8 mt-5 justify-between">
+            <li class="md:pr-3">
+                All senders must verify their domains before sending.
+            </li>
+            <li class="md:pr-3">
+                Lists must contain verified business contacts only.
+            </li>
+            <li class="md:pr-3">
+                Purchased or harvested lists are prohibited.
+            </li>
+            <li class="md:pr-3">
+                Each tenant’s complaint and bounce rates are monitored in real time.
+            </li>
+            <li class="md:pr-3">
+                Sending is automatically paused for any domain exceeding 0.1% complaints or 5% bounces.
+            </li>
+            <li class="md:pr-3">
+                All messages must include sender identification and an unsubscribe mechanism.
+            </li>
+            <li class="md:pr-3">
+                BulletMail integrates bounce and complaint feedback directly from Amazon SES via SNS.
+            </li>
+            <li class="md:pr-3">
+                Data is never shared or resold and is managed in accordance with GDPR and U.S. privacy standards.
+            </li>
+        </ul>
+        <p class="mt-20 text-zinc-300 text-center">
+            For questions about compliance or acceptable use, contact us at
+            <a href="mail:compliance@bulletmail.ai" class="font-bold block">compliance@bulletmail.ai</a>
+        </p>
+    </section>
+
+    <footer id="contact" class="border-t border-white/5">
+        <div class="mx-auto max-w-6xl px-4 py-10 grid sm:grid-cols-2 gap-4 text-sm text-zinc-400">
+            <div>
+                <div class="font-semibold text-zinc-200">BulletMail</div>
+                <div>Deliverability-first cold email infrastructure</div>
+            </div>
+            <div class="sm:text-right space-x-6">
+                <a href="/about.html" class="hover:text-white">About</a>
+                <a href="/compliance.html" class="hover:text-white">Compliance</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="#waitlist" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+        <div class="text-center text-xs text-zinc-500 pb-8">© 2025 BulletMail. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
